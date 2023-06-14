@@ -163,6 +163,8 @@ async function run() {
     // delete seleted itams
 
     app.delete("/selecteditemsdelete/:id", async(req, res)=>
+    {
+      const id = req.params.id;
     
 
     app.get('/users/admin/:email', verifyJWT, async (req, res) => {
