@@ -165,7 +165,8 @@ async function run() {
     app.delete("/selecteditemsdelete/:id", async(req, res)=>
     {
       const id = req.params.id;
-    
+      const quary = {_id: new ObjectId(id)};
+     
 
     app.get('/users/admin/:email', verifyJWT, async (req, res) => {
       const email = req.params.email;
