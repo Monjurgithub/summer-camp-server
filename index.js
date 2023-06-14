@@ -168,6 +168,9 @@ async function run() {
       const quary = {_id: new ObjectId(id)};
       const result = await enrollCollecton.deleteOne(quary);
       res.send(result)
+    })
+//  added selected class
+    app.post("/classelect", async(req, res)=>
     
 
     app.get('/users/admin/:email', verifyJWT, async (req, res) => {
