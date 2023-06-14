@@ -162,6 +162,7 @@ async function run() {
 
     // delete seleted itams
 
+    app.delete("/selecteditemsdelete/:id", async(req, res)=>
     
 
     app.get('/users/admin/:email', verifyJWT, async (req, res) => {
