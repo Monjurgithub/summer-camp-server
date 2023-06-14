@@ -166,7 +166,8 @@ async function run() {
     {
       const id = req.params.id;
       const quary = {_id: new ObjectId(id)};
-     
+      const result = await enrollCollecton.deleteOne(quary);
+    
 
     app.get('/users/admin/:email', verifyJWT, async (req, res) => {
       const email = req.params.email;
